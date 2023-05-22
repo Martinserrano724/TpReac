@@ -9,7 +9,7 @@ import Ejer1 from './components/Ejer1';
 function App() {
   return (
     <>
-     <Ejer1></Ejer1>
+     <Ejer1 tituloExtra='My friend'/>
     </>
   )
 }
