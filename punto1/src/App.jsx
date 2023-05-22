@@ -6,10 +6,18 @@ import './App.css'
 import Ejer1 from './components/Ejer1';
 
 
+
+
 function App() {
+  
+  const [msjExtra,setMensaje] =useState('')
+  function msj(){
+    return (setMensaje('(from changed state)!'))
+  }
   return (
     <>
-     <Ejer1 tituloExtra='My friend'/>
+     <Ejer1 tituloExtra='My friend' msj={msjExtra}/>
+      <button className='btn btn-primary' onClick={msj}>Click</button>
     </>
   )
 }

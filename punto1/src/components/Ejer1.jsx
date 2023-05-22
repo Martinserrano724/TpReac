@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Ejer1 = ({tituloExtra}) => {
+const Ejer1 = ({tituloExtra,msj}) => {
     return (
         <div>
-            <h1 className='text-center mt-5'>Hello {tituloExtra}</h1>
+            <h1 className='text-center mt-5'>Hello {tituloExtra} {msj}</h1>
         </div>
     );
 };
